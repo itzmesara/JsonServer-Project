@@ -1,0 +1,153 @@
+.todo-container {
+    width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    height: 80vh; 
+     overflow-y: auto
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .message {
+    text-align: center;
+    color: green;
+    margin-bottom: 10px;
+  }
+  .error{
+    text-align: center;
+    color: red;
+    margin-bottom: 10px;
+  }
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #218838;
+  }
+  button[type="Update"]
+  {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  button[type="Update"]:hover{
+    background: #0069d9;
+  }
+  
+  .todos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .todo-item {
+    display: grid;
+    grid-template-columns: repeat(4,120px);
+    gap: 50px;
+    border: 1px solid black;
+    border-radius: 8px;
+  }
+  .todo-item span input{
+    width: 100px;
+    height: auto;
+  }
+  .todo-list-val{
+    margin-top: 2px;
+    margin-left: 7px;
+  }
+  .todo-list-val input{
+    width: 200px;
+    height:auto;
+  }
+  .todo-list-val h3{
+    width: 100px;
+    word-wrap: break-word;
+    text-align: center;
+    color:green;
+  }
+  .todo-list-val p{
+    
+    color: #000000;
+    width: 100px;
+    word-wrap: break-word;
+  }
+  button.update-btn,
+  button.delete-btn,
+  button.edit-btn {
+    padding: 5px 10px;
+    font-size: 14px;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .grid-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  button.update-btn {
+    background-color: #007bff;
+    color: white;
+  }
+  button.update-btn:hover {
+    background-color: #0069d9;
+  }
+
+  button.edit-btn {
+    background-color: #f4ff23;
+    color: white;
+  }
+  button.edit-btn:hover {
+    background-color: #d9d200;
+  }
+  
+  button.delete-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  button.delete-btn:hover {
+    background-color: #c82333;
+  }
+  
